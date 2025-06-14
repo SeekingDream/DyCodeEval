@@ -22,7 +22,7 @@ Our work reveals a critical flaw in existing code LLM evaluations: **static benc
 
 ## Design Oveerview
 <div  align="center">    
- <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="760" height="380" alt="Design Overview"/><br/>
+ <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="760" height="330" alt="Design Overview"/><br/>
 </div>   
 
 ## How to Run
