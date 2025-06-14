@@ -3,6 +3,8 @@
 This repository contains the main implementation of **DyCodeEval**, introduced in our ICML 2025 paper:
 *“DyCodeEval: Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination.”*
 
+[🏆 Leaderboard](https://your-leaderboard-link) • [💻 Code](https://github.com/your-username/DyCodeEval) • [🤗 Hugging Face Dataset](https://huggingface.co/datasets/your-dataset) • [🔮 Code Kaleidoscope Project](https://github.com/your-username/DyCodeEval/tree/main/kaleidoscope)
+
 
 ## Introducation 
 
