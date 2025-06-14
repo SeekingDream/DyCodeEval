@@ -9,7 +9,7 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 
 ## Design Oveerview
 <div  align="center">    
- <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="760" height="330" alt="Design Overview"/><br/>
+ <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="760" height="310" alt="Design Overview"/><br/>
 </div>   
 
 ## How to Run
