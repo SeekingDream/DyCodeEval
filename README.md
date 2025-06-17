@@ -21,14 +21,24 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 * Scripts to reproduce all experiments and benchmarks presented in the paper
 * Pre-generated benchmark variants for **HumanEval** and **MBPP**
 
+##  🤗 Pre-generated problems
+
+We provide our pre-generated dataset from HumanEval and MBPP on [🤗 HuggingFace](https://huggingface.co/datasets/your-dataset).
 
 ## How to Run
 
 ### Installation
 
+Install the necessary libraries through `pip install requirement.txt`
 
+### Setup commerical LLM account
 
-## File Structure
+We are using `litellm` as our unfilled framework to invoke each LLM, so first follow the [documents](https://github.com/BerriAI/litellm?tab=readme-ov-file#supported-providers-docs) to setup each commerical LLM account.
+
+### Generating Dynamic Benchmark Problems
+
+To generate new benchmark problem, run `python gen_problem.py --data_id=0`.
+
 
 
 
