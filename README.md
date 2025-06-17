@@ -23,7 +23,7 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 
 ##  🤗 Pre-generated problems
 
-We provide our pre-generated dataset from HumanEval and MBPP on [🤗 HuggingFace](https://huggingface.co/datasets/your-dataset).
+We provide our pre-generated dataset from HumanEval and MBPP on [HuggingFace](https://huggingface.co/datasets/your-dataset).
 
 ## How to Run
 
