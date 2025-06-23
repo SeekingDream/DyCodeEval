@@ -12,7 +12,7 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 
 ### Design Oveerview
 <div  align="center">    
- <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="760" height="310" alt="Design Overview"/><br/>
+ <img src="https://github.com/SeekingDream/DyCodeEval/blob/main/resource/dycodeeval_overview.jpg" width="560" height="220" alt="Design Overview"/><br/>
 </div>   
 
 ### 🔧 This repository provides:
@@ -61,10 +61,23 @@ python gen_problem.py --agent_id=0 --seed_data_id=0 --scenario_num=10 --context_
 
 ## File Structure
 
+* **src/**: Core implementation of the framework
 
+  * **src/code\_llm/**: LLM inference framework, including abstractions for both vLLM and LiteLLM (supporting open-source and commercial code LLMs).
+  * **src/data/**: Data structures for various code-related tasks.
+  * **src/pt\_opt/**: Implementations of different prompt templates.
+  * **src/task\_mutation/**: Algorithms for generating new programming problems.
 
+* **eval\_pass\_K.py**: Computes pass\@K.
 
+* **gen\_code.py**: Generates code for different benchmarks.
 
+* **gen\_problem.py**: Creates new benchmark problems with DyCodeEval.
 
+* **make\_dataset.py**: Prepares datasets and pushes them to Hugging Face.
 
+* **overfit\_train.py**: Overfits code LLMs to simulate data contamination.
 
+* **pt.py**: Prompt templates for code generation.
+
+* **utils.py**: Utility functions.
