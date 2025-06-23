@@ -1,4 +1,4 @@
-# `📈 DyCodeEval`
+# 📈 DyCodeEval
 
 This repository contains the main implementation of **DyCodeEval**, introduced in our ICML 2025 paper:
 *“DyCodeEval: Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination.”*
