@@ -21,6 +21,13 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 * Scripts to reproduce all experiments and benchmarks presented in the paper
 * Pre-generated benchmark variants for **HumanEval** and **MBPP**
 
+### Future Features
+* **Support for Fine-Tuning Open Source Models**
+  Enable dynamic benchmark generation by fine-tuning open-source code models, removing the dependency on the Claude API.
+* **Simplified DyPass\@K Evaluation Script**
+  Provide an easy-to-use, unified script for computing `DyPass@K`, replacing the current set of fragmented scripts.
+
+
 ##  🤗 Pre-generated problems
 
 
@@ -59,6 +66,15 @@ python gen_problem.py --agent_id=0 --seed_data_id=0 --scenario_num=10 --context_
 * `scenario_num` and `context_num`: Control the number of new data samples generated.
 
 
+## Dynamic Metric (DyPass@K)
+
+
+To compute the dynamic metric `DyPass@K`, first run `python gen_problem.py` to generate multiple versions of the benchmark problems. Next, run `python gen_code.py` to generate code for each problem. Finally, execute `python eval_pass_K.py` to compute the `DyPass@K` metric.
+
+We will provide more streamlined, user-friendly scripts for this process in the near future.
+
+
+
 ## File Structure
 
 * **src/**: Core implementation of the framework
@@ -81,3 +97,5 @@ python gen_problem.py --agent_id=0 --seed_data_id=0 --scenario_num=10 --context_
 * **pt.py**: Prompt templates for code generation.
 
 * **utils.py**: Utility functions.
+
+
