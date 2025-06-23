@@ -23,9 +23,17 @@ This repository contains the main implementation of **DyCodeEval**, introduced i
 
 ##  🤗 Pre-generated problems
 
-We provide our pre-generated dataset from HumanEval and MBPP on [HuggingFace](https://huggingface.co/collections/CM/dycodeeval-6858e931f4f1a0d4a29ec2e9).
 
+We provide pre-generated HumanEval and MBPP datasets on [Hugging Face](https://huggingface.co/collections/CM/dycodeeval-6858e931f4f1a0d4a29ec2e9).
+You can load a dataset using the following code. Here, `raw_data_name` specifies the Hugging Face dataset path, `split` selects either the Sonnet or Haiku pre-generated set, and `random_seed` controls the randomness of the selection.
 
+```python
+from utils import load_unique_dataset
+
+raw_data_name = "CM/Dynamic_HumanEvalZero"
+split = "Claude3.5_Sonnet"  # or "Claude3.5_Haiku"
+dataset = load_unique_dataset(raw_data_name, split, group_name, random_seed=random_seed)
+```
 
 
 ## How to Run
@@ -40,7 +48,18 @@ We are using `litellm` as our unfilled framework to invoke each LLM, so first fo
 
 ### Generating Dynamic Benchmark Problems
 
-To generate new benchmark problem, run `python gen_problem.py --data_id=0`.
+
+To generate new benchmark problems use LLM agent, run:
+
+```bash
+python gen_problem.py --agent_id=0 --seed_data_id=0 --scenario_num=10 --context_num=10
+```
+* `agent_id`: Specifies the LLM agent for generation (`0` for Claude 3.5 Haiku, `1` for Claude 3.5 Sonnet).
+* `seed_data_id`: Selects the seed dataset (`0` for HumanEval, `1` for MBPP).
+* `scenario_num` and `context_num`: Control the number of new data samples generated.
+
+
+## File Structure
 
 
 
