@@ -98,4 +98,13 @@ We will provide more streamlined, user-friendly scripts for this process in the 
 
 * **utils.py**: Utility functions.
 
-
+## Citation
+```
+@inproceedings{chen2025dynamic,
+  title={Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models under Data Contamination},
+  author={Chen, Simin and Pusarla, Pranav and Ray, Baishakhi},
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  year={2025},
+  publisher={PMLR}
+}
+```
